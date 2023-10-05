@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --background-primary-color: #FFFFFF;
+    --background-secondary-color: #2F303A;
+    --accent-color: #2196F3;
+    --transperent-color: #FFFFFF99;
+    --inactive-filter-color: #F5F4FA;
+}
+body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+footer{
+    background-color: var(--background-secondary-color);
+}
+address{
+    color: var(--inactive-filter-color);
+    font-style: normal;
+}
+li, ul{
+    list-style-type: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    transition: 300ms;
+    color: var(--accent-color);
+}
+a:link{
+    transition: 300ms;
+}
+.navigate{
+    color: inherit;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+.navigate-active{
+    color:var(--accent-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    
+}
+.logo{
+    color: inherit;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+.mail 
+.tel{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+.hero-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+}
+.hero{
+    background-color: var(--background-secondary-color);
+}
+.feature-title{
+    font-size: inherit;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+.product-title{
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 1.08px;
+}
+h3{
+    color: var(--primary-color);
+    font-family: inherit;
+    font-weight: 700;
+}
+p{
+    color: var(--secondary-color);
+}
+.foot{
+    color: var(--inactive-filter-color)
+}
+.accent-text-logo{
+    color: #2196F3;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+.addr{
+    color: var(--inactive-filter-color);
+    letter-spacing: 0.42px;
+    line-height: 16px;
+}
+.contact_footer{
+    color: var(--secondary-color);
+}
