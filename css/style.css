@@ -19,13 +19,7 @@ body {
 .sitefoot {
   background-color: var(--background-secondary-color);
 }
-.products_list,
-.contact_list,
-.nav_list,
-.btn_list,
-.features_list,
-.team_list,
-.pic_list {
+ul {
   list-style-type: none;
 }
 .navigate:focus,
