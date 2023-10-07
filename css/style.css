@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 :root {
     --primary-color: #212121;
     --secondary-color: #757575;
     --background-primary-color: #FFFFFF;
     --background-secondary-color: #2F303A;
     --accent-color: #2196F3;
+    --button-active-color: #188CE8;
     --transperent-color: #FFFFFF99;
     --inactive-filter-color: #F5F4FA;
 }
@@ -37,7 +38,7 @@ body {
 .btn-order:hover,
 .btn-order:focus{
     transition: 300ms;
-    background-color:#188CE8;
+    background-color: var(--button-active-color);
 }
 .btn:focus,
 .btn:hover{
@@ -106,6 +107,7 @@ body {
 .hero-text{
     color: var(--background-primary-color);
     text-align: center;
+    font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     letter-spacing: 2.64px;
@@ -155,11 +157,11 @@ body {
 }
 /* Blue logo style */
 .accent-text-logo{
-    color: #2196F3;
+    color: var(--accent-color);
     letter-spacing: 0.28px;
 }
 .foot{
-    color: rgba(255, 255, 255, 0.60);;
+    color: var(--transperent-color);
 }
 .address_footer{
     font-style: inherit;
