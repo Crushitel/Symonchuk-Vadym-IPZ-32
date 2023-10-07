@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+:root {
+  --primary-color: #212121;
+  --secondary-color: #757575;
+  --background-primary-color: #ffffff;
+  --background-secondary-color: #2f303a;
+  --accent-color: #2196f3;
+  --button-active-color: #188ce8;
+  --transperent-color: #ffffff99;
+  --inactive-filter-color: #f5f4fa;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--primary-color);
+}
+.sitefoot {
+  background-color: var(--background-secondary-color);
+}
+.products_list,
+.contact_list,
+.nav_list,
+.btn_list,
+.features_list,
+.team_list,
+.pic_list {
+  list-style-type: none;
+}
+.navigate:focus,
+.navigate:hover,
+.contact:hover,
+.contact:focus {
+  transition: 300ms;
+  color: var(--accent-color);
+}
+.btn-order:hover,
+.btn-order:focus {
+  transition: 300ms;
+  background-color: var(--button-active-color);
+}
+.btn:focus,
+.btn:hover {
+  transition: 300ms;
+  color: var(--inactive-filter-color);
+  background-color: var(--accent-color);
+}
+.btn-order,
+.btn {
+  transition: 300ms;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn {
+  background-color: var(--inactive-filter-color);
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.48px;
+}
+.active {
+  color: var(--background-primary-color);
+  background-color: var(--accent-color);
+}
+.btn-order {
+  background-color: var(--accent-color);
+  color: var(--background-primary-color);
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.96px;
+}
+.navigate {
+  transition: 300ms;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+.navigate-active {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+.logo {
+  color: inherit;
+  text-decoration: none;
+  font-size: 26px;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 0.78px;
+}
+/* logo in footer */
+.white {
+  color: var(--background-primary-color);
+}
+.contact {
+  transition: 300ms;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.head {
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+.hero-text {
+  color: var(--background-primary-color);
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+.hero {
+  background-color: var(--background-secondary-color);
+}
+.feature-title {
+  font-size: inherit;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.feature-description {
+  color: var(--secondary-color);
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+.todo_title,
+.team_title {
+  font-size: 36px;
+  letter-spacing: 1.08px;
+}
+/* Стилі портфоліо */
+.product-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 1.08px;
+}
+.product-description {
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.48px;
+}
+
+/* team style */
+.team {
+  background-color: var(--inactive-filter-color);
+}
+.member {
+  font-size: 16px;
+  letter-spacing: 0.48px;
+}
+.title {
+  font-weight: 500;
+}
+.description {
+  color: var(--secondary-color);
+}
+/* Blue logo style */
+.accent-text-logo {
+  color: var(--accent-color);
+  letter-spacing: 0.28px;
+}
+.foot {
+  color: var(--transperent-color);
+}
+.address_footer {
+  font-style: inherit;
+  color: var(--inactive-filter-color);
+  letter-spacing: 0.42px;
+}
