@@ -145,6 +145,9 @@ body {
 }
 
 /* team style */
+.team{
+    background-color: var(--inactive-filter-color);
+}
 .member{
     font-size: 16px;
     letter-spacing: 0.48px;
