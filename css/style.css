@@ -18,12 +18,13 @@ body {
 }
 .sitefoot {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 68px;
   background-color: var(--background-secondary-color);
   height: 251px;
 }
-ul {
-  display: inline-block;
+h3, p, ul {
+  padding: 0px;
+  margin: 0px;
   list-style-type: none;
 }
 .navigate:focus,
@@ -58,7 +59,6 @@ ul {
   flex-direction: row;
   gap: 8px;
   margin-bottom: 50px;
-  margin-top: 0px;
 }
 .btn {
   padding: 6px 22px;
@@ -77,6 +77,9 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.header{
+  border-bottom: 1px solid #ECECEC;
 }
 .nav_list {
   display: flex;
@@ -148,6 +151,10 @@ ul {
   font-weight: 500;
   letter-spacing: 0.28px;
 }
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .hero-text {
   margin: 0px;
   align-self: center;
@@ -161,15 +168,22 @@ ul {
   text-transform: uppercase;
 }
 .hero {
-  height: 600px;
   background-color: var(--background-secondary-color);
 }
 .hero_content {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 153px;
+  padding-bottom: 153px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+.features{
+  padding-bottom: 0px;
+}
+.features_list{
+  display: flex;
+  flex-direction: row;
+  gap:30px;
 }
 .feature-title {
   font-size: inherit;
@@ -177,12 +191,10 @@ ul {
   text-transform: uppercase;
 }
 .feature-description {
+  margin-top: 10px;
   color: var(--secondary-color);
   line-height: 1.71;
   letter-spacing: 0.42px;
-}
-.todo {
-  padding-top: 118px;
 }
 .todo_content {
   display: flex;
@@ -197,7 +209,6 @@ ul {
 }
 .todo_title,
 .team_title {
-  display: inline-block;
   margin: 0px;
   height: 36px;
   display: inline-block;
@@ -205,11 +216,8 @@ ul {
   letter-spacing: 1.08px;
 }
 /* Стилі портфоліо */
-.product_item {
-  border: 1px solid #eee;
-}
-.products-list {
-  padding: 96px 0;
+.product__item {
+  border-bottom: 1px solid #eee;
 }
 .products_list {
   padding: 0;
@@ -218,6 +226,7 @@ ul {
   gap: 30px;
 }
 .product-title {
+  padding-left: 24px;
   margin: 0px;
   padding-top: 20px;
   color: var(--primary-color);
@@ -226,7 +235,9 @@ ul {
   letter-spacing: 1.08px;
 }
 .product-description {
-  margin: 0px;
+  padding-top: 4px;
+  padding-bottom: 20px;
+  padding-left: 24px;
   color: var(--secondary-color);
   font-size: 16px;
   line-height: 1.875;
@@ -234,17 +245,43 @@ ul {
 }
 
 /* team style */
-.team {
+.team_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.team_list{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 30px;
+}
+.team_item{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  background: #FFF;
+}
+.team{
   background-color: var(--inactive-filter-color);
 }
 .member {
+  display: inline-block;
+  margin-top: 30px;
+  align-self: center;
   font-size: 16px;
   letter-spacing: 0.48px;
 }
 .title {
+  margin-top: 30px;
+  margin-bottom: 0px;
   font-weight: 500;
 }
 .description {
+  margin-top: 10px;
+  margin-bottom: 30px;
   color: var(--secondary-color);
 }
 /* Blue logo style */
