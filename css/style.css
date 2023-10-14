@@ -78,19 +78,19 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-.nav_list{
+.nav_list {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
-.contact_list{
+.contact_list {
   display: flex;
   margin-left: auto;
   gap: 40px;
 }
-.nav_head{
+.nav_head {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -103,6 +103,9 @@ ul {
   text-decoration: none;
 }
 .btn-order {
+  width: 250px;
+  height: 50px;
+  align-self: center;
   background-color: var(--accent-color);
   color: var(--background-primary-color);
   font-weight: 700;
@@ -146,6 +149,9 @@ ul {
   letter-spacing: 0.28px;
 }
 .hero-text {
+  margin: 0px;
+  align-self: center;
+  width: 696px;
   color: var(--background-primary-color);
   text-align: center;
   font-weight: 900;
@@ -155,7 +161,15 @@ ul {
   text-transform: uppercase;
 }
 .hero {
+  height: 600px;
   background-color: var(--background-secondary-color);
+}
+.hero_content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .feature-title {
   font-size: inherit;
@@ -167,16 +181,34 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+.todo {
+  padding-top: 118px;
+}
+.todo_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.pic_list {
+  display: flex;
+  padding: 0px;
+  gap: 30px;
+}
 .todo_title,
 .team_title {
+  display: inline-block;
+  margin: 0px;
+  height: 36px;
+  display: inline-block;
   font-size: 36px;
   letter-spacing: 1.08px;
 }
 /* Стилі портфоліо */
-.product_item{
-  border: 1px solid #EEE;
+.product_item {
+  border: 1px solid #eee;
 }
-.products-list{
+.products-list {
   padding: 96px 0;
 }
 .products_list {
@@ -225,7 +257,7 @@ ul {
   margin-bottom: 8px;
   color: var(--transperent-color);
 }
-.addr{
+.addr {
   margin-bottom: 8px;
 }
 .address_footer {
