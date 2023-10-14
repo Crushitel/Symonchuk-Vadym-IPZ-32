@@ -22,10 +22,13 @@ body {
   background-color: var(--background-secondary-color);
   height: 251px;
 }
-h3, p, ul {
+h1, h2, h3, p, ul {
   padding: 0px;
   margin: 0px;
   list-style-type: none;
+}
+img{
+  display: block;
 }
 .navigate:focus,
 .navigate:hover,
@@ -56,7 +59,6 @@ h3, p, ul {
 .btn_list {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   gap: 8px;
   margin-bottom: 50px;
 }
@@ -83,10 +85,7 @@ h3, p, ul {
 }
 .nav_list {
   display: flex;
-  flex-wrap: wrap;
   gap: 50px;
-  margin: 0;
-  padding: 0;
 }
 .contact_list {
   display: flex;
@@ -156,7 +155,6 @@ h3, p, ul {
   padding-bottom: 94px;
 }
 .hero-text {
-  margin: 0px;
   align-self: center;
   width: 696px;
   color: var(--background-primary-color);
@@ -168,11 +166,11 @@ h3, p, ul {
   text-transform: uppercase;
 }
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--background-secondary-color);
 }
 .hero_content {
-  padding-top: 153px;
-  padding-bottom: 153px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -180,9 +178,11 @@ h3, p, ul {
 .features{
   padding-bottom: 0px;
 }
+.feature_item{
+  max-width: 270px;
+}
 .features_list{
   display: flex;
-  flex-direction: row;
   gap:30px;
 }
 .feature-title {
@@ -196,38 +196,29 @@ h3, p, ul {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
-.todo_content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-}
 .pic_list {
   display: flex;
-  padding: 0px;
   gap: 30px;
 }
 .todo_title,
 .team_title {
-  margin: 0px;
+  margin-bottom: 50px;
   height: 36px;
-  display: inline-block;
+  text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
 }
 /* Стилі портфоліо */
 .product__item {
-  border-bottom: 1px solid #eee;
+  border: 1px solid #eee;
 }
 .products_list {
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 27px;
 }
 .product-title {
   padding-left: 24px;
-  margin: 0px;
   padding-top: 20px;
   color: var(--primary-color);
   font-size: 18px;
@@ -248,12 +239,8 @@ h3, p, ul {
 .team_content{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 50px;
 }
 .team_list{
-  margin: 0px;
-  padding: 0px;
   display: flex;
   gap: 30px;
 }
@@ -276,7 +263,6 @@ h3, p, ul {
 }
 .title {
   margin-top: 30px;
-  margin-bottom: 0px;
   font-weight: 500;
 }
 .description {
@@ -293,6 +279,9 @@ h3, p, ul {
   display: flex;
   margin-bottom: 8px;
   color: var(--transperent-color);
+}
+.tel_foot{
+  margin-bottom: 0px;
 }
 .addr {
   margin-bottom: 8px;
