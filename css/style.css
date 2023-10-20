@@ -21,7 +21,7 @@ body {
   padding-bottom: 68px;
   background-color: var(--background-secondary-color);
 }
-h1, h2, h3, p, ul {
+h1, h2, h3, p, ul, a {
   padding: 0px;
   margin: 0px;
   list-style-type: none;
