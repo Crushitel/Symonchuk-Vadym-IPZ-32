@@ -270,14 +270,16 @@ img{
 }
 .foot {
   display: block;
-  margin-bottom: 8px;
+  width: 231px;
+  margin-bottom: 12px;
   color: var(--transperent-color);
 }
 .tel_foot{
   margin-bottom: 0px;
 }
 .addr {
-  margin-bottom: 8px;
+  display: inline-block;
+  margin-bottom: 12px;
 }
 .address_footer {
   margin-top: 28px;
