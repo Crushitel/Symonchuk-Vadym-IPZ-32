@@ -210,23 +210,22 @@ img{
 .product__item {
   border: 1px solid #eee;
 }
+.product_text{
+  padding: 20px 24px;
+}
 .products_list {
   display: flex;
   flex-wrap: wrap;
   gap: 27px;
 }
 .product-title {
-  padding-left: 24px;
-  padding-top: 20px;
+  margin-bottom: 4px;
   color: var(--primary-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 1.08px;
 }
 .product-description {
-  padding-top: 4px;
-  padding-bottom: 20px;
-  padding-left: 24px;
   color: var(--secondary-color);
   font-size: 16px;
   line-height: 1.875;
