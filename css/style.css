@@ -20,7 +20,6 @@ body {
   padding-top: 60px;
   padding-bottom: 68px;
   background-color: var(--background-secondary-color);
-  height: 251px;
 }
 h1, h2, h3, p, ul {
   padding: 0px;
@@ -94,7 +93,6 @@ img{
 }
 .nav_head {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 .product_link,
@@ -102,6 +100,7 @@ img{
 .logo,
 .navigate,
 .navigate-active {
+  display: inline-block;
   text-decoration: none;
 }
 .btn-order {
@@ -114,19 +113,18 @@ img{
   line-height: 1.875;
   letter-spacing: 0.96px;
 }
+.navigate,
+.navigate-active{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .navigate {
-  display: inline-block;
-  margin-top: 32px;
-  margin-bottom: 32px;
   transition: 300ms;
   color: inherit;
   font-weight: 500;
   letter-spacing: 0.28px;
 }
 .navigate-active {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  display: inline-block;
   color: var(--accent-color);
   font-weight: 500;
   letter-spacing: 0.28px;
@@ -140,6 +138,7 @@ img{
 }
 /* logo in footer */
 .white {
+  margin: 0;
   color: var(--background-primary-color);
 }
 .contact {
@@ -203,7 +202,6 @@ img{
 .todo_title,
 .team_title {
   margin-bottom: 50px;
-  height: 36px;
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
@@ -236,17 +234,11 @@ img{
 }
 
 /* team style */
-.team_content{
-  display: flex;
-  flex-direction: column;
-}
 .team_list{
   display: flex;
   gap: 30px;
 }
 .team_item{
-  display: flex;
-  flex-direction: column;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background: #FFF;
@@ -254,20 +246,22 @@ img{
 .team{
   background-color: var(--inactive-filter-color);
 }
+
 .member {
-  display: inline-block;
-  margin-top: 30px;
-  align-self: center;
+  text-align: center;
   font-size: 16px;
   letter-spacing: 0.48px;
 }
+.head,
+.team_text{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .title {
-  margin-top: 30px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 .description {
-  margin-top: 10px;
-  margin-bottom: 30px;
   color: var(--secondary-color);
 }
 /* Blue logo style */
@@ -276,7 +270,7 @@ img{
   letter-spacing: 0.28px;
 }
 .foot {
-  display: flex;
+  display: block;
   margin-bottom: 8px;
   color: var(--transperent-color);
 }
