@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web studio</title>
+    <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   </head>
   <body>
     <!-- Навігаційне меню -->
-    <header>
-      <a href="index.html" class="logo"><span class="accent-text-logo">Web</span>Studio</a
-      >
+    <header class="header">
+      <div class="nav_head container">
+        <a href="index.html" class="logo"><span class="accent-text-logo">Web</span>Studio</a>
       <nav>
         <ul class="nav_list">
           <li><a class="navigate-active" href="index.html">Студія</a></li>
@@ -24,38 +25,42 @@
         <li><a class="contact head" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a class="contact head" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+    </div>
     </header>
     <!-- Головна сторінка -->
     <main>
       <!-- Секція з гаслом і копкою -->
-      <section class="hero">
-        <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-        <button class="btn-order" type="button">Замовити послугу</button>
+      <section class="hero section">
+        <div class="hero_content container">
+          <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
+          <button class="btn-order" type="button">Замовити послугу</button>
+        </div>
       </section>
       <!-- Секція з основними акцентами роботи -->
-      <section class="features">
-        <ul class="features_list">
-          <li>
+      <section class="features section">
+        <div class="feature_content container">
+          <ul class="features_list">
+          <li class="feature_item">
             <h3 class="feature-title">Увага до деталей</h3>
             <p class="feature-description">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li>
+          <li class="feature_item">
             <h3 class="feature-title">Пунктуальність</h3>
             <p class="feature-description">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li>
+          <li class="feature_item">
             <h3 class="feature-title">Планування</h3>
             <p class="feature-description">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
+          <li class="feature_item">
             <h3 class="feature-title">Сучасні технології</h3>
             <p class="feature-description">
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -63,61 +68,72 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!-- Секція із зображеннь -->
-      <section class="todo">
+      <section class="todo section">
+        <div class="todo_content container">
         <h2 class="todo_title">Чим ми займаємося</h2>
         <ul class="pic_list">
           <li>
-            <img src="images/image-1.jpg" alt="Програмування" width="370">
+            <img src="images/image-1.jpg" alt="Програмування" width="370" height="294">
           </li>
           <li>
-            <img
-              src="images/Image-2.jpg"
-              alt="Мобільне програмування"
-              width="370"
-            >
+            <img  src="images/Image-2.jpg" alt="Мобільне програмування" width="370" height="294">
           </li>
           <li>
-            <img src="images/image-3.jpg" alt="Графічний дизайн" width="370">
+            <img src="images/image-3.jpg" alt="Графічний дизайн" width="370" height="294">
           </li>
         </ul>
+      </div>
       </section>
-      <section class="team">
+      <section class="team section">
         <!-- Секція з описом нашої команди -->
+        <div class="team_content container">
         <h2 class="team_title">Наша команда</h2>
         <ul class="team_list">
-          <li>
-            <img src="images/image-4.jpg" alt="Ігор Дем'яненко" width="270">
+          <li class="team_item">
+            <img src="images/image-4.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+            <div class="team_text">
             <h3 class="member title">Ігор Дем'яненко</h3>
             <p class="member description">Product Designer</p>
+            </div>
           </li>
-          <li>
-            <img src="images/image-5.jpg" alt="Ольга Рєпіна" width="270">
+          <li class="team_item">
+            <img src="images/image-5.jpg" alt="Ольга Рєпіна" width="270" height="260">
+            <div class="team_text">
             <h3 class="member title">Ольга Рєпіна</h3>
             <p class="member description">Frontend Developer</p>
+          </div>
           </li>
-          <li>
-            <img src="images/image-6.jpg" alt="Микола Тарасов" width="270">
+          <li class="team_item">
+            <img src="images/image-6.jpg" alt="Микола Тарасов" width="270" height="260">
+            <div class="team_text">
             <h3 class="member title">Микола Тарасов</h3>
             <p class="member description">Marketing</p>
+          </div>
           </li>
-          <li>
-            <img src="images/image-7.jpg" alt="Михайло Єрмаков" width="270">
+          <li class="team_item">
+            <img src="images/image-7.jpg" alt="Михайло Єрмаков" width="270" height="260">
+            <div class="team_text">
             <h3 class="member title">Михайло Єрмаков</h3>
             <p class="member description">UI Designer</p>
+          </div>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!-- Контактна інформація -->
     <footer class="sitefoot">
-      <a href="index.html" class="logo white"><span class="accent-text-logo">Web</span>Studio</a>
-      <address class="address_footer">
+      <div class="container">
+        <a href="index.html" class="logo white"><span class="accent-text-logo">Web</span>Studio</a>
+        <address class="address_footer">
         <p class="addr">м. Київ, пр-т Лесі Українки, 26</p>
         <a class="contact foot" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="contact foot" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="contact foot tel_foot" href="tel:+380961111111">+38 096 111 11 11</a>
       </address>
+      </div>
     </footer>
   </body>
 </html>
