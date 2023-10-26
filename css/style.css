@@ -35,6 +35,7 @@ img{
 .contact:focus {
   transition: 300ms;
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .social_foot_link:focus,
 .social_foot_link:hover{
@@ -96,6 +97,11 @@ img{
 }
 .header{
   border-bottom: 1px solid #ECECEC;
+}
+.head_icon{
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
 }
 .nav_list {
   display: flex;
@@ -161,8 +167,11 @@ img{
   color: var(--secondary-color);
 }
 .head {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  fill: var(--secondary-color);
 }
 .section{
   padding-top: 94px;
@@ -267,7 +276,6 @@ img{
   font-size: 16px;
   letter-spacing: 0.48px;
 }
-.head,
 .team_text{
   padding-top: 30px;
   padding-bottom: 30px;
