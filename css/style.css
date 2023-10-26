@@ -18,7 +18,7 @@ body {
 }
 .sitefoot {
   padding-top: 60px;
-  padding-bottom: 68px;
+  padding-bottom: 60px;
   background-color: var(--background-secondary-color);
 }
 h1, h2, h3, p, ul, a {
@@ -51,6 +51,14 @@ img{
   transition: 300ms;
   color: var(--inactive-filter-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
+}
+.product__item:hover {
+  transition: 300ms;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+              0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+              0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .btn-order,
 .btn {
@@ -76,6 +84,8 @@ img{
 .active {
   color: var(--background-primary-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
 }
 .container {
   max-width: 1200px;
@@ -213,6 +223,7 @@ img{
 }
 /* Стилі портфоліо */
 .product__item {
+  transition: 300ms;
   border: 1px solid #eee;
 }
 .product_text{
