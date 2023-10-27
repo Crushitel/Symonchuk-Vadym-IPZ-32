@@ -204,6 +204,19 @@ img{
 .feature_item{
   max-width: 270px;
 }
+.feature_bcgrnd{
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--inactive-filter-color);
+}
+.feature_icon{
+  width: 70px;
+  height: 70px;
+}
 .features_list{
   display: flex;
   gap:30px;
