@@ -113,8 +113,6 @@ img {
 }
 .head_icon {
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
 }
 .nav_list {
   display: flex;
@@ -138,8 +136,7 @@ img {
   text-decoration: none;
 }
 .btn-order {
-  width: 250px;
-  height: 50px;
+  padding: 10px 24px;
   align-self: center;
   background-color: var(--accent-color);
   color: var(--background-primary-color);
@@ -367,6 +364,7 @@ img {
 }
 .separator {
   display: flex;
+  align-items: baseline;
   gap: 94px;
 }
 .social_links {
