@@ -8,6 +8,7 @@
   --button-active-color: #188ce8;
   --transperent-color: #ffffff99;
   --inactive-filter-color: #f5f4fa;
+  --social_link_color: #afb1b8;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -18,7 +19,7 @@ body {
 }
 .sitefoot {
   padding-top: 60px;
-  padding-bottom: 68px;
+  padding-bottom: 60px;
   background-color: var(--background-secondary-color);
 }
 h1, h2, h3, p, ul, a {
@@ -26,7 +27,7 @@ h1, h2, h3, p, ul, a {
   margin: 0px;
   list-style-type: none;
 }
-img{
+img {
   display: block;
 }
 .navigate:focus,
@@ -35,6 +36,25 @@ img{
 .contact:focus {
   transition: 300ms;
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.team_social:focus,
+.team_social:hover {
+  transition: 300ms;
+  background-color: var(--accent-color);
+  fill: var(--background-primary-color);
+}
+.client_link:focus,
+.client_link:hover {
+  transition: 300ms;
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.social_foot_link:focus,
+.social_foot_link:hover {
+  transition: 300ms;
+  background-color: var(--accent-color);
 }
 .btn-order:hover,
 .btn-order:focus {
@@ -46,6 +66,13 @@ img{
   transition: 300ms;
   color: var(--inactive-filter-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.product__item:hover {
+  transition: 300ms;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .btn-order,
 .btn {
@@ -71,6 +98,8 @@ img{
 .active {
   color: var(--background-primary-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .container {
   max-width: 1200px;
@@ -79,8 +108,11 @@ img{
   margin-left: auto;
   margin-right: auto;
 }
-.header{
-  border-bottom: 1px solid #ECECEC;
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.head_icon {
+  margin-right: 10px;
 }
 .nav_list {
   display: flex;
@@ -104,8 +136,7 @@ img{
   text-decoration: none;
 }
 .btn-order {
-  width: 250px;
-  height: 50px;
+  padding: 10px 24px;
   align-self: center;
   background-color: var(--accent-color);
   color: var(--background-primary-color);
@@ -114,7 +145,7 @@ img{
   letter-spacing: 0.96px;
 }
 .navigate,
-.navigate-active{
+.navigate-active {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -146,10 +177,13 @@ img{
   color: var(--secondary-color);
 }
 .head {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  fill: var(--secondary-color);
 }
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -167,22 +201,36 @@ img{
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--background-secondary-color);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/hero-bg.jpg");
 }
 .hero_content {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.features{
+.features {
   padding-bottom: 0px;
 }
-.feature_item{
+.feature_item {
   max-width: 270px;
 }
-.features_list{
+.feature_bcgrnd {
+  display: inline-block;
+  width: 100%;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--inactive-filter-color);
+}
+.feature_icon {
+  width: 70px;
+  height: 70px;
+}
+.features_list {
   display: flex;
-  gap:30px;
+  gap: 30px;
 }
 .feature-title {
   font-size: inherit;
@@ -200,7 +248,8 @@ img{
   gap: 30px;
 }
 .todo_title,
-.team_title {
+.team_title,
+.clients_title {
   margin-bottom: 50px;
   text-align: center;
   font-size: 36px;
@@ -208,9 +257,10 @@ img{
 }
 /* Стилі портфоліо */
 .product__item {
+  transition: 300ms;
   border: 1px solid #eee;
 }
-.product_text{
+.product_text {
   padding: 20px 24px;
 }
 .products_list {
@@ -233,26 +283,40 @@ img{
 }
 
 /* team style */
-.team_list{
+.team_list {
   display: flex;
   gap: 30px;
 }
-.team_item{
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  border-radius: 0px 0px 4px 4px;
-  background: #FFF;
+.team_social {
+  transition: 300ms;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 12px 12px;
+  fill: var(--social_link_color);
+  width: 44px;
+  height: 44px;
 }
-.team{
+.social_team_links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.team_item {
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+}
+.team {
   background-color: var(--inactive-filter-color);
 }
-
 .member {
   text-align: center;
   font-size: 16px;
   letter-spacing: 0.48px;
 }
-.head,
-.team_text{
+.team_text {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -269,17 +333,68 @@ img{
   letter-spacing: 0.28px;
 }
 .foot {
-  display: block;
-  width: 231px;
   margin-bottom: 12px;
+  display: block;
   color: var(--transperent-color);
 }
-.tel_foot{
+.tel_foot {
   margin-bottom: 0px;
 }
 .addr {
-  display: inline-block;
   margin-bottom: 12px;
+}
+.clients_list{
+  display: flex;
+  gap: 30px;
+}
+.client_link{
+  transition: 300ms;
+  display: inline-block;
+  fill: var(--social_link_color);
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid var(--social_link_color);
+}
+.client_icon{
+  transition:300ms;
+  width: 106px;
+  height: 60px;
+}
+.separator {
+  display: flex;
+  align-items: baseline;
+  gap: 94px;
+}
+.social_links {
+  display: flex;
+  gap: 10px;
+}
+.social_item{
+  border-radius: 50%;
+}
+.social_foot_link {
+  transition: 300ms;
+  display: inline-block;
+  padding: 12px 12px;
+  fill: var(--background-primary-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+}
+.social_icon {
+  width: 20px;
+  height: 20px;
+}
+.social_title {
+  margin-bottom: 20px;
+  color: var(--background-primary-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 .address_footer {
   margin-top: 28px;
