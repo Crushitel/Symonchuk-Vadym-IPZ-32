@@ -28,7 +28,8 @@ h2,
 h3,
 p,
 ul,
-a {
+a,
+svg {
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -120,6 +121,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 .head_icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 10px;
 }
 .nav_list {
@@ -201,7 +203,55 @@ img {
   line-height: 1.875;
   letter-spacing: 0.96px;
 }
-
+.backdrop{
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.20);
+  z-index:1;
+}
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-primary-color);
+  border-radius: 4px;
+  width: 528px;
+  height: 581px;
+}
+.btn_close_modal:hover .mdal_close{
+  fill: var(--accent-color);
+}
+.mdal_close{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--primary-color);
+  width: 18px;
+  height: 18px;
+}
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+.btn_close_modal{
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  fill: var(--primary-color);
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+}
 .navigate,
 .navigate-active {
   padding-top: 32px;
