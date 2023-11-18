@@ -143,8 +143,7 @@ img {
 }
 .pic_title {
   position: absolute;
-  height: 70px;
-  width: 370px;
+  width: 100%;
   bottom: 0;
   padding: 27px 0;
   color: var(--background-primary-color);
@@ -352,8 +351,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
-.pic_list {
+.pic_item{
   position: relative;
+}
+.pic_list {
   display: flex;
   gap: 30px;
 }
