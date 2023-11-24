@@ -229,8 +229,9 @@ img {
   z-index:1;
 }
 .license_checkbox{
+  display: flex;
+  justify-content: center;
   position: relative;
-  margin-left: 13px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -283,7 +284,7 @@ img {
   transition: fill 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 16px;
   height: 15px; 
-  border: 2px solid rgba(33, 33, 33, 0.20);
+  border: 2px solid var(--primary-color);
   border-radius: 2px;
   margin-right: 7px;
   margin-bottom: 3px;
@@ -303,7 +304,6 @@ img {
   color: var(--secondary-color);
   line-height: 1.71;
   letter-spacing: 0.42px;
-  padding-left: 8px;
 }
 .btn_submit_modal{
   display: inline-block;
@@ -344,7 +344,8 @@ img {
   font-size: 20px;
   letter-spacing: 0.6px;
 }
-.btn_close_modal:hover .mdal_close{
+.btn_close_modal:hover .mdal_close,
+.btn_close_modal:focus .mdal_close{
   fill: var(--accent-color);
 }
 .mdal_close{
