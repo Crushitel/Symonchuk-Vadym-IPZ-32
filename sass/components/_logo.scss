@@ -1,0 +1,15 @@
+.logo{
+    margin-right: 93px;
+    color: inherit;
+    font-size: 26px;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 0.78px;
+}
+.footer__logo{
+    margin: 0;
+    color: var(--background-primary-color);
+}
+.logo__footer,
+.logo__header{
+    color: var(--accent-color);
+}
