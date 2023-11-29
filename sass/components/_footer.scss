@@ -82,6 +82,12 @@
             color: var(--social_link_color);
             background-color: var(--background-secondary-color);
         }
+        &__input::placeholder{
+            color: rgba(255, 255, 255, 0.60);
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.48px;
+        }
         &__submit{
             @include button;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
