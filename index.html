@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web studio</title>
-    <link rel="stylesheet" href="css/modern-normalize.css">
-    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="css/modern-normalize.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   </head>
@@ -47,52 +47,52 @@
         </div>
       </section>
       <!-- Секція з основними акцентами роботи -->
-      <section class="features section">
-        <div class="feature__content container">
-          <ul class="feature__list">
-          <li class="feature__item">
-            <div class="feature__image-background">
-              <svg class="feature__icon">
+      <section class="features section section--features">
+        <div class="features__content container">
+          <ul class="features__list">
+          <li class="features__item">
+            <div class="features__image-background">
+              <svg class="features__icon">
               <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
             </div>
-            <h3 class="feature__title">Увага до деталей</h3>
-            <p class="feature__description">
+            <h3 class="features__title">Увага до деталей</h3>
+            <p class="features__description">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li class="feature__item">
-            <div class="feature__image-background">
-              <svg class="feature__icon">
+          <li class="features__item">
+            <div class="features__image-background">
+              <svg class="features__icon">
               <use href="./images/icons.svg#icon-clock3"></use>
               </svg>
             </div>
-            <h3 class="feature__title">Пунктуальність</h3>
-            <p class="feature__description">
+            <h3 class="features__title">Пунктуальність</h3>
+            <p class="features__description">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li class="feature__item">
-            <div class="feature__image-background">
-              <svg class="feature__icon">
+          <li class="features__item">
+            <div class="features__image-background">
+              <svg class="features__icon">
               <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
             </div>
-            <h3 class="feature__title">Планування</h3>
-            <p class="feature__description">
+            <h3 class="features__title">Планування</h3>
+            <p class="features__description">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="feature__item">
-            <div class="feature__image-background">
-              <svg class="feature__icon">
+          <li class="features__item">
+            <div class="features__image-background">
+              <svg class="features__icon">
               <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
             </div>
-            <h3 class="feature__title">Сучасні технології</h3>
-            <p class="feature__description">
+            <h3 class="features__title">Сучасні технології</h3>
+            <p class="features__description">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -106,15 +106,15 @@
         <h2 class="activities__title">Чим ми займаємося</h2>
         <ul class="activities__list">
           <li class="activities__item">
-            <img src="images/image-1.jpg" alt="Програмування" width="370" height="294" class="feature__image">
+            <img src="images/image-1.jpg" alt="Програмування" width="370" height="294" class="activities__image">
             <p class="activities__description">Десктопні додатки</p>
           </li>
           <li class="activities__item">
-            <img src="images/Image-2.jpg" alt="Мобільне програмування" width="370" height="294" class="feature__image">
+            <img src="images/Image-2.jpg" alt="Мобільне програмування" width="370" height="294" class="activities__image">
               <p class="activities__description">Мобільні додатки</p>
           </li>
           <li class="activities__item">
-            <img src="images/image-3.jpg" alt="Графічний дизайн" width="370" height="294" class="feature__image">
+            <img src="images/image-3.jpg" alt="Графічний дизайн" width="370" height="294" class="activities__image">
               <p class="activities__description">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -152,7 +152,7 @@
                 </svg>
                 </a>
               </li>
-              <li><a class="team__social-link social" href="https://linkedin.com" target="_blank">
+              <li><a class="team__social-link" href="https://linkedin.com" target="_blank">
                 <svg class="social__icon">
                 <use href="./images/icons.svg#icon-linkedin2"></use>
                 </svg>
@@ -415,14 +415,14 @@
           </label>
           <label class="modal-form__label" name="modal_comment">
             Коментар
-            <textarea class="modal-form__input comment" required placeholder="Введіть текст"></textarea>
+            <textarea class="modal-form__input modal-form__input--comment" required placeholder="Введіть текст"></textarea>
           </label>
           <div class="modal-form__license license">
             <label class="license__label">
               <input class="license__checkbox" type="checkbox" required>
               <svg class="license__checked-icon">
               <use href="./images/icons.svg#icon-check"></use>
-            </svg>Погоджуюся з розсилкою та приймаю <a class="license_link" href="#">Умови договору</a></label>
+            </svg>Погоджуюся з розсилкою та приймаю <a class="license__link" href="#">Умови договору</a></label>
           </div>
           <button class="modal-form__submit" type="submit">Відправити</button>
         </form>

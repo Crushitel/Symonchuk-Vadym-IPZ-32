@@ -1,0 +1,33 @@
+.features{
+    &__list{
+        display: flex;
+        gap: 30px;
+    }
+    &__item{
+        max-width: 270px
+    }
+    &__image-background{
+        display: inline-block;
+        width: 100%;
+        height: 120px;
+        padding: 25px 100px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        background-color: var(--inactive-filter-color);
+    }
+    &__icon{
+        width: 70px;
+        height: 70px;
+    }
+    &__title{
+        font-size: inherit;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+    &__description{
+        margin-top: 10px;
+        color: var(--secondary-color);
+        line-height: 1.71;
+        letter-spacing: 0.42px;
+    }
+}
