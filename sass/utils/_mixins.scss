@@ -1,0 +1,16 @@
+@mixin soc-icon{
+    width: 20px;
+    height: 20px;
+}
+@mixin section-title{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+}
+@mixin button{
+    border: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}

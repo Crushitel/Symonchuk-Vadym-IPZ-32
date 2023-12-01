@@ -1,0 +1,59 @@
+.team{
+    background-color: var(--inactive-filter-color);
+    &__title{
+        @include section-title;
+    }
+    &__list{
+        display: flex;
+        gap: 30px;
+    }
+    &__item{
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 0px 0px 4px 4px;
+        background: #fff;
+    }
+    &__card{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__member,
+    &__description{
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0.48px;
+    }
+    &__member{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    &__description{
+        color: var(--secondary-color);
+    }
+    &__social-list{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 16px;
+    }
+    &__social-item{
+        border-radius: 50%;
+    }
+    &__social-link{
+        transition: fill 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline-block;
+        border-radius: 50%;
+        padding: 12px 12px;
+        fill: var(--social_link_color);
+        width: 44px;
+        height: 44px;
+    }
+    &__social-link:hover,
+    &__social-link:focus{
+        background-color: var(--accent-color);
+        fill: var(--background-primary-color);
+    }
+    .social__icon{
+        @include soc-icon;
+    }
+}

@@ -1,0 +1,161 @@
+.backdrop{
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.20);
+    z-index:1;
+}
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background-color: var(--background-primary-color);
+    border-radius: 4px;
+    width: 528px;
+    &__close-button{
+        position: absolute;
+        background-color: white;
+        border-radius: 50%;
+        fill: var(--primary-color);
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        padding-top: 6px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+    &__close-icon{
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: var(--primary-color);
+        width: 18px;
+        height: 18px;
+    }
+    &__close-button:hover &__close-icon,
+    &__close-button:focus &__close-icon{
+        fill: var(--accent-color);
+    }
+    &__title{
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 0.6px;
+    }
+    .modal-form{
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &__label{
+            position: relative;
+            color: var(--secondary-color);
+            font-size: 12px;
+            letter-spacing: 0.12px;
+        }
+        &__input{
+            transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            outline: 1px solid rgba(33, 33, 33, 0.20);;
+            border-radius: 4px;
+            font-size: 16px;
+            border: 1px solid rgba(33, 33, 33, 0.20);
+            padding: 11px 0 12px 42px;
+            width: 100%;
+            margin-top: 4px;
+            color: var(--primary-color);
+            background-color: var(--background-primary-color);
+        }
+        &__input--comment{
+            height: 120px;
+            padding: 12px 16px;
+            resize: none;
+        }
+        &__input--comment::placeholder{
+            color: rgba(117, 117, 117, 0.50);
+            font-size: 12px;
+            letter-spacing: 0.12px;
+        }
+        &__icon{
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            fill: var(--primary-color);
+            position: absolute;
+            top: 29px;
+            left: 10px;
+        }
+        &__input:focus,
+        &__input:hover{
+            outline: 1px solid var(--accent-color);
+        }
+        &__input:hover + .modal-form__icon,
+        &__input:focus + .modal-form__icon{
+            fill: var(--accent-color);
+        }
+        &__submit{
+            @include button;
+            display: inline-block;
+            align-self: center;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: var(--accent-color);
+            color: var(--background-primary-color);
+            font-weight: 700;
+            width: 200px;
+            letter-spacing: 0.96px;
+            line-height: 1.875;
+            padding: 10px 52px;
+            }
+            &__submit:hover,
+            &__submit:focus{
+                background-color: var(--button-active-color);
+            }
+        }
+    }
+    .license{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        &__label{
+            color: var(--secondary-color);
+            line-height: 1.71;
+            letter-spacing: 0.42px;
+            cursor: pointer;
+        }
+        &__checkbox{
+            position: absolute;
+            left: 10px;
+            bottom: 6px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        &__checked-icon{
+            transition: fill 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            width: 16px;
+            height: 15px; 
+            border: 2px solid var(--primary-color);
+            border-radius: 2px;
+            margin-right: 7px;
+            margin-bottom: 3px;
+            fill: none;
+            vertical-align: middle;
+        }
+        &__checkbox:checked + .license__checked-icon{
+            fill: var(--background-primary-color);
+            border: none;
+            background-color: var(--accent-color);
+        }
+        &__link{
+            color: var(--accent-color);
+            text-decoration: underline;
+    }
+}

@@ -1,0 +1,22 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 14px;
+    color: var(--primary-color);
+    .container {
+        max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .section--features{
+        padding-bottom: 0px;
+    }
+}
