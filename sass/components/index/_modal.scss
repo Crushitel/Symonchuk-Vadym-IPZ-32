@@ -22,6 +22,10 @@
     background-color: var(--background-primary-color);
     border-radius: 4px;
     width: 528px;
+    box-shadow: 0px 2px 1px 0px
+    rgba(0, 0, 0, 0.20), 0px 1px 1px 0px 
+    rgba(0, 0, 0, 0.14), 0px 1px 3px 0px 
+    rgba(0, 0, 0, 0.12);
     &__close-button{
         position: absolute;
         background-color: white;
@@ -74,6 +78,10 @@
             margin-top: 4px;
             color: var(--primary-color);
             background-color: var(--background-primary-color);
+            &:hover,
+            &:focus{
+                outline: 1px solid var(--accent-color);
+            }
         }
         &__input--comment{
             height: 120px;
@@ -91,10 +99,6 @@
             position: absolute;
             top: 29px;
             left: 10px;
-        }
-        &__input:focus,
-        &__input:hover{
-            outline: 1px solid var(--accent-color);
         }
         &__input:hover + .modal-form__icon,
         &__input:focus + .modal-form__icon{
@@ -123,8 +127,8 @@
         display: flex;
         justify-content: center;
         position: relative;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
         &__label{
             color: var(--secondary-color);
             line-height: 1.71;
