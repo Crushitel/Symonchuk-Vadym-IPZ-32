@@ -6,6 +6,12 @@ body {
     font-size: 14px;
     color: var(--primary-color);
     .container {
+        @media screen and (max-width: 1200px) {
+            max-width: 768px;
+        }
+        @media screen and (max-width: 767px) {
+            max-width: 480px;
+        }
         max-width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
@@ -13,6 +19,11 @@ body {
         margin-right: auto;
     }
     .section {
+        @media screen and (max-width: 1200px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            
+        }
         padding-top: 94px;
         padding-bottom: 94px;
     }

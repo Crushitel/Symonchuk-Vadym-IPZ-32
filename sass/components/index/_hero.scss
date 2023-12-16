@@ -10,6 +10,10 @@
         gap: 30px; 
     }
     &__text{
+        @media screen and (max-width: 1200px) {
+            font-size: 26px;
+            width: 360px;
+        }
         align-self: center;
         width: 696px;
         color: var(--background-primary-color);
