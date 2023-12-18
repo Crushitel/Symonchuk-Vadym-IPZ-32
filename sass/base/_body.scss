@@ -1,3 +1,4 @@
+
 body {
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -33,4 +34,7 @@ body {
         }
         padding-bottom: 0px;
     }
+}
+.no-scroll {
+    overflow: hidden;
 }

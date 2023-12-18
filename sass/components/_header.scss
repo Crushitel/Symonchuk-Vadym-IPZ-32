@@ -3,6 +3,7 @@
     &__content{
         @media screen and (max-width: 767px) {
             max-width: 100% !important;
+            max-height: 60px;;
             justify-content: space-between;
         }
         height: 80px;
@@ -97,11 +98,36 @@
         }
     }
     &__burger-menu{
+        padding: 0;
+        z-index: 2;
         display: none;
         @include button;
+        fill: var(--primary-color);
         background-color: var(--background-primary-color);
         @media screen and (max-width: 767px) {
             display: block;
         }
+        :hover,
+        :focus{
+            fill: var(--accent-color);
+        }
+    }
+    &__burger-menu.is-open{
+        .header__burger-icon-open{
+            opacity: 0;
+            display: none;
+        }
+        .header__burger-icon-close{
+            opacity: 1;
+            display: block;
+        }
+    }
+    &__burger-icon-open,
+    &__burger-icon-close{
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__burger-icon-close{
+        opacity: 0;
+        display: none;
     }
 }

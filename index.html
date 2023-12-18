@@ -35,11 +35,43 @@
           </svg>+38 096 111 11 11</a>
         </li>
       </ul>
-      <button class="header__burger-menu" type="button">
-        <svg class="header__burger-icon" width="40" height="40">
+      <!-- Кнопка мобільного меню -->
+      <button class="header__burger-menu" data-mobile-menu-button type="button">
+        <svg class="header__burger-icon header__burger-icon-close" width="40" height="40">
+          <use href="./images/icons.svg#icon-close2"></use>
+        </svg>
+        <svg class="header__burger-icon header__burger-icon-open" width="40" height="40">
           <use href="./images/icons.svg#icon-menu5"></use>
         </svg>
       </button>
+    </div>
+    <!-- Мобільне меню -->
+    <div class="header__mobile-menu mobile-menu" data-mobile-menu>
+      <nav class="mobile-menu__nav nav">
+        <ul class="nav__list nav__list--mobile-menu">
+          <li class="nav__item"><a class="nav__link-mobile-menu nav__link-mobile-menu--active" href="index.html">Студія</a></li>
+          <li class="nav__item"><a class="nav__link-mobile-menu" href="portfolio.html">Портфоліо</a></li>
+          <li class="nav__item"><a class="nav__link-mobile-menu" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="mobile-menu__contact-list">
+        <li class="mobile-menu__contact-item">
+          <a class="mobile-menu__contact-link mobile-menu__contact-link--blue" href="tel: +380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="mobile-menu__contact-item">
+          <a class="mobile-menu__contact-link" href="mailto: info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__social-list">
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="https://instagram.com" target="_blank">Instagram</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
     </div>
     </header>
     <!-- Головна сторінка -->
@@ -434,5 +466,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
