@@ -15,6 +15,16 @@
         border-radius: 0px 0px 4px 4px;
         background: #fff;
     }
+    &__image{
+        @media screen and (min-width: 767px) and (max-width: 1200px) {
+            width: 354px;
+            height: auto;
+        }
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            height: auto;
+        }
+    }
     &__card{
         padding-top: 30px;
         padding-bottom: 30px;

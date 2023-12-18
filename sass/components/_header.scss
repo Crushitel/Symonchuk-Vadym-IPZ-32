@@ -10,10 +10,10 @@
         align-items: center;
     }
     .nav{
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
         &__list{
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
             display: flex;
             gap: 50px;
         }

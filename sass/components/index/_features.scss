@@ -6,9 +6,21 @@
         gap: 30px;
     }
     &__item{
+        @media screen and (max-width: 767px) {
+            max-width: 450px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            max-width: 354px;
+        }
         max-width: 270px
     }
     &__image-background{
+        @media screen and (max-width: 767px) {
+            padding: 25px 190px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            padding: 25px 142px;
+        }
         display: inline-block;
         width: 100%;
         height: 120px;
@@ -22,6 +34,9 @@
         height: 70px;
     }
     &__title{
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
         font-size: inherit;
         letter-spacing: 0.42px;
         text-transform: uppercase;

@@ -49,6 +49,11 @@ body .section {
 body .section--features {
   padding-bottom: 0px;
 }
+@media screen and (max-width: 1200px) {
+  body .section--features {
+    padding-bottom: 60px;
+  }
+}
 
 h1,
 h2,
@@ -111,14 +116,14 @@ img {
     justify-content: space-between;
   }
 }
-@media screen and (max-width: 767px) {
-  .header .nav {
-    display: none;
-  }
-}
 .header .nav__list {
   display: flex;
   gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  .header .nav__list {
+    display: none;
+  }
 }
 .header .nav__item {
   position: relative;
@@ -268,6 +273,16 @@ img {
 .features__item {
   max-width: 270px;
 }
+@media screen and (max-width: 767px) {
+  .features__item {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .features__item {
+    max-width: 354px;
+  }
+}
 .features__image-background {
   display: inline-block;
   width: 100%;
@@ -276,6 +291,16 @@ img {
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--inactive-filter-color);
+}
+@media screen and (max-width: 767px) {
+  .features__image-background {
+    padding: 25px 190px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .features__image-background {
+    padding: 25px 142px;
+  }
 }
 .features__icon {
   width: 70px;
@@ -286,6 +311,11 @@ img {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
+}
 .features__description {
   margin-top: 10px;
   color: var(--secondary-color);
@@ -293,6 +323,11 @@ img {
   letter-spacing: 0.42px;
 }
 
+@media screen and (max-width: 1200px) {
+  .activities {
+    display: none;
+  }
+}
 .activities__title {
   margin-bottom: 50px;
   text-align: center;
@@ -340,6 +375,18 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background: #fff;
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .team__image {
+    width: 354px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team__image {
+    width: 100%;
+    height: auto;
+  }
 }
 .team__card {
   padding-top: 30px;
@@ -405,6 +452,18 @@ img {
   height: 92px;
   border-radius: 4px;
   border: 1px solid var(--social_link_color);
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .clients__link {
+    width: 226px;
+    padding: 16px 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .clients__link {
+    width: 210px;
+    padding: 16px 52px;
+  }
 }
 .clients__link:hover, .clients__link:focus {
   border-color: var(--accent-color);
@@ -588,9 +647,16 @@ img {
 
 .filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  .filter {
+    justify-content: flex-start;
+    gap: 12px;
+  }
 }
 .filter__button {
   border: 0px;
@@ -621,6 +687,12 @@ img {
   justify-content: center;
   gap: 27px;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .products__list {
+    gap: 24px;
+    justify-content: flex-start;
+  }
+}
 .products__item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #eee;
@@ -649,6 +721,18 @@ img {
   width: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 }
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .products .wrapper__image {
+    width: 354px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .products .wrapper__image {
+    width: 100%;
+    height: 294px;
+  }
+}
 .products .wrapper__text {
   position: absolute;
   top: 50%;
@@ -670,6 +754,11 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 1.08px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .products__title {
+    max-width: 305px;
+  }
 }
 .products__description {
   color: var(--secondary-color);
@@ -796,7 +885,7 @@ img {
 }
 @media screen and (max-width: 1200px) {
   .footer .email__input {
-    width: 450px;
+    max-width: 450px;
   }
 }
 .footer .email__input::-moz-placeholder {

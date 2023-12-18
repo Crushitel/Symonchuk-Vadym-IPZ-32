@@ -1,5 +1,10 @@
 .filter{
+    @media screen and (max-width: 767px) {
+        justify-content: flex-start;
+        gap: 12px;
+    }
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;

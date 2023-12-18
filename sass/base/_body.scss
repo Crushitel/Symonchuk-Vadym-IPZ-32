@@ -28,6 +28,9 @@ body {
         padding-bottom: 94px;
     }
     .section--features{
+        @media screen and (max-width: 1200px) {
+            padding-bottom: 60px;
+        }
         padding-bottom: 0px;
     }
 }
