@@ -270,7 +270,7 @@ img {
 .mobile-menu .nav__list--mobile-menu {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 32px;
 }
 .mobile-menu .nav__link-mobile-menu {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -449,6 +449,11 @@ img {
   font-size: 36px;
   letter-spacing: 1.08px;
 }
+@media screen and (max-width: 1200px) {
+  .activities__title {
+    margin-bottom: 30px;
+  }
+}
 .activities__list {
   display: flex;
   flex-wrap: wrap;
@@ -479,6 +484,11 @@ img {
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
+}
+@media screen and (max-width: 1200px) {
+  .team__title {
+    margin-bottom: 30px;
+  }
 }
 .team__list {
   display: flex;
@@ -551,6 +561,11 @@ img {
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
+}
+@media screen and (max-width: 1200px) {
+  .clients__title {
+    margin-bottom: 30px;
+  }
 }
 .clients__list {
   display: flex;
@@ -731,13 +746,18 @@ img {
 }
 
 .license {
-  display: flex;
-  justify-content: center;
+  margin-left: 12px;
   position: relative;
   padding-top: 10px;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .license {
+    margin-left: 0;
+  }
+}
 .license__label {
+  font-size: 12px;
   color: var(--secondary-color);
   line-height: 1.71;
   letter-spacing: 0.42px;
@@ -902,19 +922,17 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: baseline;
   gap: 94px;
 }
 @media screen and (max-width: 1200px) {
   .footer__content {
-    align-items: center;
     justify-content: space-around;
     gap: 60px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1201px) {
   .footer__content {
-    flex-direction: column;
+    align-items: baseline;
   }
 }
 .footer .contact {

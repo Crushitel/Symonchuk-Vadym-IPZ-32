@@ -131,12 +131,15 @@
         }
     }
     .license{
-        display: flex;
-        justify-content: center;
+        margin-left: 12px;
+        @media screen and (max-width: 1200px) {
+            margin-left: 0;
+        }
         position: relative;
         padding-top: 10px;
         padding-bottom: 20px;
         &__label{
+            font-size: 12px;
             color: var(--secondary-color);
             line-height: 1.71;
             letter-spacing: 0.42px;

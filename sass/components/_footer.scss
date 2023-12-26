@@ -5,17 +5,15 @@
     &__content{
         @media screen and (max-width: 1200px) 
         {
-            align-items: center;
             justify-content: space-around;
             gap: 60px;
         }
-        @media screen and (max-width: 767px) {
-            flex-direction: column;
+        @media screen and (min-width: 1201px){
+            align-items: baseline;
         }
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: baseline;
         gap: 94px;
     }
     .contact{
