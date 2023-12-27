@@ -21,19 +21,54 @@
           <li class="nav__item"><a class="nav__link" href="#">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="header__contact contact contact__list">
+      <ul class="header__contact contact">
         <li class="contact__item">
-          <a class="contact__link contact__link--header" href="mailto:info@devstudio.com">
+          <a class="contact__link contact__link--header contact__link--header-top" href="mailto:info@devstudio.com">
           <svg class="contact__icon" width="16" height="12">
           <use href="./images/icons.svg#icon-mail5"></use>
           </svg>info@devstudio.com</a>
           </li>
           <li class="contact__item">
-          <a class="contact__link contact__link--header" href="tel:+380961111111">
+          <a class="contact__link contact__link--header contact__link--header-bottom" href="tel:+380961111111">
           <svg class="contact__icon contact__icon--phone" width="10" height="16">
           <use href="./images/icons.svg#icon-phone2"></use>
           </svg>+38 096 111 11 11</a>
         </li>
+      </ul>
+      <button class="header__burger-menu" data-mobile-menu-button type="button">
+        <svg class="header__burger-icon header__burger-icon-close" width="40" height="40">
+          <use href="./images/icons.svg#icon-close2"></use>
+        </svg>
+        <svg class="header__burger-icon header__burger-icon-open" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu5"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="header__mobile-menu mobile-menu" data-mobile-menu>
+      <nav class="mobile-menu__nav nav">
+        <ul class="nav__list nav__list--mobile-menu">
+          <li class="nav__item"><a class="nav__link-mobile-menu" href="index.html">Студія</a></li>
+          <li class="nav__item"><a class="nav__link-mobile-menu nav__link-mobile-menu--active" href="portfolio.html">Портфоліо</a></li>
+          <li class="nav__item"><a class="nav__link-mobile-menu" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="mobile-menu__contact-list">
+        <li class="mobile-menu__contact-item">
+          <a class="mobile-menu__contact-link mobile-menu__contact-link--blue" href="tel: +380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="mobile-menu__contact-item">
+          <a class="mobile-menu__contact-link" href="mailto: info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__social-list">
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="https://instagram.com" target="_blank">Instagram</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="https://linkedin.com" target="_blank">LinkedIn</a></li>
       </ul>
     </div>
     </header>
@@ -53,13 +88,14 @@
             <li class="products__item">
               <a href="#" class="products__link">
                 <div class="products__wrapper wrapper">
-                  <img src="images/image-8.jpg" alt="Ноутбук із сайтом" class="products__image">
+                  <img src="images/Technokryak.jpg" alt="Ноутбук із сайтом" class="wrapper__image" width="370" height="294">
                   <div class="wrapper__overlay">
                     <p class="wrapper__text">
                       Ресурс пропонує комплексні пропозиції
                       з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні
                       відомості про компанію чи приватну особу
+                    </p>
                   </div>
                 </div>
                 <div class="products__text">
@@ -71,7 +107,7 @@
             <li class="products__item">
               <a href="#" class="products__link">
                 <div class="products__wrapper wrapper">
-                  <img src="images/image-9.jpg" alt="Два баскетболіста" class="products__image">
+                  <img src="images/NewOrlean.jpg" alt="Два баскетболіста" class="wrapper__image" width="370" height="294">
                   <div class="wrapper__overlay">
                   <p class="wrapper__text">
                     Ресурс пропонує комплексні пропозиції
@@ -90,7 +126,7 @@
             <li class="products__item">
               <a href="#" class="products__link">
                 <div class="products__wrapper wrapper">
-                  <img src="images/image-10.jpg" alt="Риба із дизайном The Seafood" class="products__image">
+                  <img src="images/TheSeafood.jpg" alt="Риба із дизайном The Seafood" class="wrapper__image" width="370" height="294">
                   <div class="wrapper__overlay">
                     <p class="wrapper__text">
                       Ресурс пропонує комплексні пропозиції
@@ -109,13 +145,14 @@
             <li class="products__item">
               <a href="#" class="products__link">
                 <div class="products__wrapper wrapper">
-                  <img src="images/image-11.jpg" alt="Навушники" class="products__image">
+                  <img src="images/Prime.jpg" alt="Навушники" class="wrapper__image" width="370" height="294">
                   <div class="wrapper__overlay">
                     <p class="wrapper__text">
                       Ресурс пропонує комплексні пропозиції
                       з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні
                       відомості про компанію чи приватну особу
+                    </p>
                   </div>
                 </div>
                 <div class="products__text">
@@ -127,13 +164,14 @@
             <li class="products__item">
               <a href="#" class="products__link">
                 <div class="products__wrapper wrapper">
-                  <img src="images/image-12.jpg" alt="Дві коробки" class="products__image">
+                  <img src="images/Boxes.jpg" alt="Дві коробки" class="wrapper__image" width="370" height="294">
                   <div class="wrapper__overlay">
                     <p class="wrapper__text">
                       Ресурс пропонує комплексні пропозиції
                       з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні
                       відомості про компанію чи приватну особу
+                    </p>
                   </div>
                 </div>
                 <div class="products__text">
@@ -145,13 +183,14 @@
             <li class="products__item">
               <a href="#" class="products__link">
                 <div class="products__wrapper wrapper">
-                  <img src="images/image-13.jpg" alt="iMac із сайтом Inspiration has no Borders" class="products__image">
+                  <img src="images/Inspiration.jpg" alt="iMac із сайтом Inspiration has no Borders" class="wrapper__image" width="370" height="294">
                   <div class="wrapper__overlay">
                     <p class="wrapper__text">
                       Ресурс пропонує комплексні пропозиції
                       з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні
                       відомості про компанію чи приватну особу
+                    </p>
                   </div>
                 </div>
                 <div class="products__text">
@@ -163,13 +202,14 @@
             <li class="products__item">
               <a href="#" class="products__link">
                 <div class="products__wrapper wrapper">
-                  <img src="images/image-14.jpg" alt="Журнал Limited Edition" class="products__image">
+                  <img src="images/Limited.jpg" alt="Журнал Limited Edition" class="wrapper__image" width="370" height="294">
                   <div class="wrapper__overlay">
                     <p class="wrapper__text">
                       Ресурс пропонує комплексні пропозиції
                       з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні
                       відомості про компанію чи приватну особу
+                    </p>
                   </div>
                 </div>
                 <div class="products__text">
@@ -181,13 +221,14 @@
             <li class="products__item">
             <a href="#" class="products__link">
               <div class="products__wrapper wrapper">
-                <img src="images/image-15.jpg" alt="Білий брелок Lab El Tag" class="products__image">
+                <img src="images/ElLab.jpg" alt="Білий брелок Lab El Tag" class="wrapper__image" width="370" height="294">
                 <div class="wrapper__overlay">
                   <p class="wrapper__text">
                     Ресурс пропонує комплексні пропозиції
                     з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні
                     відомості про компанію чи приватну особу
+                  </p>
                 </div>
               </div>
               <div class="products__text">
@@ -199,13 +240,14 @@
             <li class="products__item">
             <a href="#" class="products__link">
                 <div class="products__wrapper wrapper">
-                  <img src="images/image-16.jpg" alt="MacBook Pro із сайтом Growing Business" class="products__image">
+                  <img src="images/GrowingBusiness.jpg" alt="MacBook Pro із сайтом Growing Business" class="wrapper__image" width="370" height="294">
                   <div class="wrapper__overlay">
                     <p class="wrapper__text">
                       Ресурс пропонує комплексні пропозиції
                       з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні
                       відомості про компанію чи приватну особу
+                    </p>
                   </div>
                 </div>
               <div class="products__text">
@@ -226,7 +268,7 @@
         <address class="footer__address contact">
         <p class="contact__address">м. Київ, пр-т Лесі Українки, 26</p>
         <a class="contact__link contact__link--footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="contact__link contact__link--footer--tel contact__link--footer" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="contact__link contact__link--footer contact__link--footer--tel" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
         </div>
         <div class="footer__social social">
@@ -278,5 +320,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/filter.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

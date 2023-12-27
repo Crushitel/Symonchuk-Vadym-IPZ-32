@@ -1,7 +1,12 @@
 .products{
     &__list{
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            gap: 24px;
+            justify-content: flex-start;
+        }
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 27px;
     }
     &__item{
@@ -32,6 +37,16 @@
             width: 100%;
             background-color: rgba(33, 150, 243, 0.9)
         }
+        &__image{
+            @media screen and (max-width: 1200px) and (min-width: 768px){
+                width: 354px;
+                height: auto;
+            }
+            @media screen and (max-width: 767px){
+                width: 100%;
+                height: 294px;
+            }
+        }
         &__text{
             position: absolute;
             top: 50%;
@@ -49,6 +64,9 @@
         padding: 20px 24px;
     }
     &__title{
+        @media  screen and (min-width: 768px) and (max-width: 1200px) {
+            max-width: 305px;
+        }
         margin-bottom: 4px;
         color: var(--primary-color);
         font-size: 18px;

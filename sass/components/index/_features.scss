@@ -1,16 +1,25 @@
 .features{
     &__list{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
     }
     &__item{
+        @media screen and (max-width: 767px) {
+            max-width: 450px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            max-width: 354px;
+        }
         max-width: 270px
     }
     &__image-background{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
         width: 100%;
         height: 120px;
-        padding: 25px 100px;
+        padding: 25px;
         margin-bottom: 30px;
         border-radius: 4px;
         background-color: var(--inactive-filter-color);
@@ -20,6 +29,9 @@
         height: 70px;
     }
     &__title{
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
         font-size: inherit;
         letter-spacing: 0.42px;
         text-transform: uppercase;

@@ -1,9 +1,14 @@
 .activities{
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
     &__title{
         @include section-title
     }
     &__list{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
     }
     &__item{

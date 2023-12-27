@@ -1,0 +1,91 @@
+.mobile-menu.is-open{
+    transform: translateX(0);
+}
+.mobile-menu{
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--background-primary-color);
+    position: fixed;
+    display: flex;
+    transform: translateX(100%);
+    flex-direction: column;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    top: 0px;
+    padding: 48px 40px;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    .nav{
+        &__list--mobile-menu{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        &__link-mobile-menu{
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            color: var(--primary-color);
+            font-size: 40px;
+            font-weight: 500;
+            letter-spacing: 0.28px;
+        }
+        &__link-mobile-menu--active{
+            color: var(--accent-color);
+        }
+        &__link-mobile-menu:hover,
+        &__link-mobile-menu:focus{
+            color: var(--accent-color);
+        }
+    }
+    &__contact-list{
+        margin-bottom: 64px;
+        margin-top: auto;
+    }
+    &__contact-item:not(:last-child){
+            margin-bottom: 32px;
+    }
+    &__contact-link{
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: var(--secondary-color);
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.48px;
+        &:hover,
+        &:focus{
+            color: var(--accent-color);
+        }
+    }
+    &__contact-link--blue{
+        color: var(--accent-color);
+        letter-spacing: 0.68px;
+        font-size: 34px;
+    }
+    &__social-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__social-item{
+        display: flex;
+        align-items: center;
+    }
+    &__social-item:not(:last-child)::after{
+        content: "";
+        width: 1px;
+        height: 24px;
+        background-color: rgba(33, 33, 33, 0.20);;
+        margin-left: 10px;
+    }
+    &__social-link{
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: var(--accent-color);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.36px;
+        &:hover,
+        &:focus{
+            color: var(--primary-color);
+        }
+    }
+}

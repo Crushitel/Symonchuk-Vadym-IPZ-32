@@ -1,15 +1,24 @@
 .hero{
+    @media screen and (max-width: 1200px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
     padding-top: 200px;
     padding-bottom: 200px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/hero-bg.jpg");
     background-size: cover;
+    background-position: center;
     &__content{
         display: flex;
         flex-direction: column;
         gap: 30px; 
     }
     &__text{
+        @media screen and (max-width: 1200px) {
+            font-size: 26px;
+            width: 360px;
+        }
         align-self: center;
         width: 696px;
         color: var(--background-primary-color);
@@ -30,9 +39,9 @@
         font-weight: 700;
         line-height: 1.875;
         letter-spacing: 0.96px;
-    }
-    &__button:hover,
-    &__buton:focus{
-        background-color: var(--button-active-color);
+        &:hover,
+        &:focus{
+            background-color: var(--button-active-color);
+        }
     }
 }
